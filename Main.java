@@ -9,7 +9,6 @@ public class Main {
         Karyawan karyawan = new Karyawan();
         karyawan.karyawan("8598979857", "Hilda", "perempuan");
         karyawan.absenKerja();
-        karyawan.absenKerja();
         karyawan.hitungGaji();
         karyawan.displayInfo();
 
@@ -17,7 +16,6 @@ public class Main {
         dosen.karyawan("89797576874", "Raka", "Laki-Laki");
         dosen.setGolongan("B");
         dosen.setJumlahSks(4);
-        dosen.absenKerja();
         dosen.absenKerja();
         dosen.hitungGaji();
         dosen.displayInfo();
