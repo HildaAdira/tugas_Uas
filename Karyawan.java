@@ -2,10 +2,8 @@
 //227064516036
 package gajiKaryawan;
 
-public class Karyawan {
-   
+public class Karyawan {   
    // Class Karyawan
-
     private String Nip;
     private String nama;
     private String jenisKelamin;
@@ -19,24 +17,20 @@ public class Karyawan {
         this.jumlahHari = 0;
         this.totalGaji = 0;
     }
-
     public void absenKerja() {
         this.jumlahHari++;
     }
-
     public void hitungGaji() {
         this.totalGaji = this.jumlahHari * 50000;
     }
-
     public void displayInfo() {
         System.out.println("NIP\t\t: " + this.Nip);
         System.out.println("Nama\t\t: " + this.nama);
         System.out.println("Jenis Kelamin\t: " + this.jenisKelamin);
         System.out.println("Total Gaji\t: " + this.totalGaji);
-        System.out.println("---------------------------");
+        System.out.println("----------------------------");
     }
 }
-
 // Class Dosen
 class Dosen extends Karyawan {
     private String golongan;
@@ -46,7 +40,6 @@ class Dosen extends Karyawan {
     public void hitungGaji() {
         this.totalGaji = this.jumlahHari * this.upahPerSks * this.jumlahSks;
     }
-
     public void setGolongan(String golongan) {
         this.golongan = golongan;
         if (golongan.equals("A")) {
@@ -59,12 +52,10 @@ class Dosen extends Karyawan {
             System.out.println("Golongan tidak valid!");
         }
     }
-
     public void setJumlahSks(int jumlahSks) {
         this.jumlahSks = jumlahSks;
     }
 }
-
 // Class Staf
 class Staf extends Karyawan {
 
