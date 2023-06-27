@@ -7,13 +7,17 @@ public class Main {
         System.out.println("================");
     
         Karyawan karyawan = new Karyawan();
-        karyawan.karyawan("LPW8979857", "Hilda", "perempuan");
+        karyawan.Nip ="LPW8979857";
+        karyawan.nama ="Hilda";
+        karyawan.jenisKelamin = "perempuan";
         karyawan.absenKerja();
         karyawan.hitungGaji();
         karyawan.displayInfo();
 
         Dosen dosen = new Dosen();
-        dosen.karyawan("SNR7576874", "Raka", "Laki-Laki");
+        dosen.Nip ="SNR7576874";
+        dosen.nama ="Raka";
+        dosen.jenisKelamin = "laki-laki";        
         dosen.setGolongan("B");
         dosen.setJumlahSks(4);
         dosen.absenKerja();
@@ -21,7 +25,8 @@ public class Main {
         dosen.displayInfo();
 
         Staf staf = new Staf();
-        staf.karyawan("SIP7845743", "Arumi", "Perempuan");
+        staf.Nip ="SIP7845743";
+        staf.jenisKelamin = "perempuan";
         staf.absenKerja();
         staf.hitungGaji();
         staf.displayInfo();        
