@@ -26,10 +26,10 @@ public class Main {
 
         Staf staf = new Staf();
         staf.Nip ="SIP7845743";
+        staf.nama ="Arumi";
         staf.jenisKelamin = "perempuan";
         staf.absenKerja();
         staf.hitungGaji();
-        staf.displayInfo();        
-       
+        staf.displayInfo();              
     }
 }
